@@ -234,21 +234,7 @@ if st.session_state.report_ready:
             st.metric("Deepest",            f"{deepest['depth']} km")
 
         st.divider()
-        # Mobile hint
-if st.session_state.report_ready == False:
-    st.markdown("""
-    <div style="
-        background-color: #1E88E5;
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 10px;
-    ">
-        📱 Mobile Users: Tap the <b>arrow (›)</b> at the top-left to open settings
-    </div>
-    """, unsafe_allow_html=True)
+
         col_left, col_right = st.columns(2)
 
         with col_left:
